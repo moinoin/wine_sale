@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="#">
+    <script>
+        !function(e,t,i,r){function n(){var e=document.querySelector("head"),t=document.createElement("div");t.style.width="1rem",t.style.display="none",e.appendChild(t);var i=parseFloat(window.getComputedStyle(t,null).width);return e.removeChild(t),i}function a(){var r=d.getBoundingClientRect().width;r/c>768&&(r=768*c);var n=r/e*t;if(!i){var a=p/16;n/=a}d.style.fontSize=n+"px",v.rem=n}var m,o=window,l=o.document,d=l.documentElement,s=l.querySelector('meta[name="viewport"]'),c=0,u=0,p=n(),v={};if(s){var h=s.getAttribute("content").match(/initial\-scale=([\d\.]+)/);h&&(console.warn("将根据已有的meta标签来设置缩放比例"),u=parseFloat(h[1]),c=parseInt(1/u))}if(!c&&!u){var f=o.devicePixelRatio;r?(c=f>=3&&(!c||c>=3)?3:f>=2&&(!c||c>=2)?2:1,u=1/c):(c=1,u=1/c)}if(d.setAttribute("data-dpr",c),!s)if(s=l.createElement("meta"),s.setAttribute("name","viewport"),s.setAttribute("content","width=device-width, initial-scale="+u+", maximum-scale="+u+", minimum-scale="+u+", user-scalable=no"),d.firstElementChild)d.firstElementChild.appendChild(s);else{var w=l.createElement("div");w.appendChild(s),l.write(w.innerHTML)}o.addEventListener("resize",function(){clearTimeout(m),m=setTimeout(a,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(m),m=setTimeout(a,300))},!1),a(),v.dpr=c,v.refreshRem=a,v.rem2px=function(e){var t=parseFloat(e)*this.rem;return"string"==typeof e&&e.match(/rem$/)&&(t+="px"),t},v.px2rem=function(e){var t=parseFloat(e)/this.rem;return"string"==typeof e&&e.match(/px$/)&&(t+="rem"),t},window.remmoka=v}
+        (750,100,!0,!0);
+        /*
+         * designWidth, oneRem2Px, resetScaleFontSizeToDefault, useScaleFix1pxTooBold
+         * @param designWidth 设计稿宽度 一般来说iPhone6是750 如果缩小就变成了375px
+         * @param oneRem2Px 1rem对应多少px
+         * @param resetScaleFontSizeToDefault 是否重置Android因为系统放大或者缩小字体带来的影响
+         * @param useScaleFix1pxTooBold 是否通过meta标签的scale处理1px过于粗的问题
+         * */
+    </script>
+    <title>商品详情</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div class="product-details">
+    <div class="wine"><img src="img/product_details/wine1.jpg"></div>
+    <div class="goods">
+        <li class="goods-name">2017新款学生装加厚韩版宽松连帽卫衣女</li>
+        <li class="goods-price">¥376</li>
+        <li class="goods-send"><span>快递:免运费</span><span>月销39笔</span><span>江苏常州</span></li>
+        <li class="goods-count"><span>请选择数量</span><span><img src="img/product_details/arrow.jpg"> </span></li>
+    </div>
+    <div class="account">
+        <div class="left">
+            <a class="service" href="#">
+                <div><img src="img/product_details/service.png"></div>
+                <div class="ser">客服</div>
+            </a>
+            <a class="collect" href="#">
+                <div><img src="img/product_details/collect.png"></div>
+                <div class="col">收藏</div>
+            </a>
+        </div>
+        <a class="right" href="#">
+            <span class="balance">加入购物车</span>
+        </a>
+    </div>
+    <div class="black">
+
+    </div>
+    <div class="hide">
+        <img src="img/product_details/cha.png" class="fault">
+        <div class="wine"><img src="img/product_details/wine1.jpg"></div>
+        <div class="mation">
+            <div class="price">¥199</div>
+            <div class="stock">库存124件</div>
+        </div>
+        <div class="cnt">
+            <div class="choose">购买数量</div>
+            <div class="count">
+                <div class="reduce">-</div>
+                <div class="number">5</div>
+                <div class="add">＋</div>
+            </div>
+        </div>
+        <a class="account1">
+            <div class="balance">去结算</div>
+        </a>
+    </div>
+</div>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/product_details.js"></script>
+</body>
+</html>

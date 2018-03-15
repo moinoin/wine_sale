@@ -1,0 +1,176 @@
+.details{
+  font-size: .27rem;
+  .receive-mation{
+    height: 2.08rem;
+    display: flex;
+    .pic{
+      width: .85rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: .40rem;
+        height: .41rem;
+      }
+    }
+    .mation{
+      padding: .2rem 0 .2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .name{
+        display: flex;
+        justify-content: space-between;
+        span{
+          color: #333333;
+        }
+      }
+      .address{
+        color: #333333;
+      }
+      .note{
+        color: #f6af3a;
+      }
+    }
+    .arrow{
+      width: .82rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: .29rem;
+        height: .29rem;
+      }
+    }
+  }
+  .goods{
+    background-color: #fafafa;
+    padding: .15rem 0 .15rem 0;
+    display: flex;
+    .goods-img{
+      width: 2.34rem;
+      display: flex;
+      justify-content: center;
+      img{
+        width: 1.84rem;
+        height: 1.84rem;
+      }
+    }
+    .goods-mation{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .goods-name{
+        width: 4.75rem;
+        height: .6rem;
+        line-height: .3rem;
+        overflow: hidden;
+        color: #3d4245;
+      }
+      .goods-information{
+        color: #9a9a9a;
+      }
+      .goods-return{
+        font-size: .21rem;
+        width: 1.15rem;
+        height: .3rem;
+        color: #dd2727;
+        text-align: center;
+        line-height: .26rem;
+        border: .02rem #dd2727 solid;
+        border-radius: .1rem;
+      }
+      .goods-price{
+        width: 4.85rem;
+        display: flex;
+        justify-content: space-between;
+        .money{
+          color: #dd2727;
+          font-size: .27rem;}
+      }
+    }
+  }
+  .transport{
+     li{
+       font-size: .27rem;
+       color: #333333;
+       line-height: .9rem;
+       padding: 0 .25rem 0 .25rem;
+       border-bottom: .01rem solid #eeeeee;
+       display: flex;
+       justify-content: space-between;
+       span{
+         color: #333333;
+         img{
+           width: .30rem;
+           height: .30rem;
+         }
+       }
+     }
+    .total{
+      display: flex;
+      justify-content: flex-end;
+      span{
+        font-size: .27rem;
+        color: #ff5001;
+      }
+    }
+  }
+  .coupon{
+    padding: 0 .25rem 0 .25rem;
+    display: flex;
+    justify-content: space-between;
+    div{
+      font-size: .27rem;
+      color: #333333;
+      line-height: .9rem;
+      img{
+        width: .4rem;
+        height: .4rem;
+      }
+    }
+  }
+  .account{
+    background-color: #fff;
+    height: 1.15rem;
+    font-weight: bold;
+    border-top: .01rem #787878 solid;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    .left{
+      width: 5.23rem;
+      display: flex;
+      font-weight: bold;
+      padding-left: .18rem;
+      padding-right: .18rem;
+      justify-content: flex-end;
+      align-items: center;
+      .total{
+        font-size: .29rem;
+        color: #000;
+      }
+      .money{
+        font-size: .29rem;
+        color: #d81e06;
+      }
+    }
+    .right{
+      width: 2.27rem;
+      background-color: #611c33;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .balance{
+        font-size: .28rem;
+        color: #fff;
+      }
+      .amount{
+        font-size: .23rem;
+        color: #fff;
+      }
+    }
+  }
+}

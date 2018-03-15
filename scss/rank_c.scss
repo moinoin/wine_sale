@@ -1,0 +1,86 @@
+.rank{
+  width:7.5rem;
+  left:50%;
+  margin-left: -3.75rem;
+  position:absolute;
+
+.banner{
+  width:7.5rem;
+  height:2.42rem;
+  padding:0.3rem 0 0.3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  background-image: url("../img/rank/rank-banner.png");
+  background-size: cover;
+}
+.word-1{
+  width:4.61rem;
+  height: 0.83rem;
+  flex:0 0 auto;
+}
+.word-2{
+  width:3.81rem;
+  height:0.24rem;
+  flex:0 0 auto;
+}
+.time {
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #611c33;
+  position: absolute;
+  right: 0.27rem;
+  top:2.05rem;
+}
+.content-4{
+  display: flex;
+  flex-direction: row;
+}
+.content-4 .left{
+  width:2.0rem;
+  height:1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-4 .left img{
+  width: 1.0rem;
+  height: 1.0rem;
+  border-radius: 50%;
+}
+.middle .right{
+  border-bottom: 0.01rem #dbdbdb solid;
+}
+.content-4 .middle{
+  width: 6.0rem;
+  height:1.3rem;
+  padding-top: 0.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items:flex-start;
+}
+.wine-user{
+  font-size: 0.3rem;
+  flex: 1;
+}
+.middle .wine-message{
+  font-size:0.27rem;
+  flex: 1;
+}
+.num{
+  color:#611c38;
+}
+.right{
+  width: 1.1rem;
+  padding-left: 0.35rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.right .collect{
+  width:0.30rem;
+  height:0.30rem;
+}
+}

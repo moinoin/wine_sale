@@ -1,0 +1,350 @@
+#person {
+  box-sizing: border-box;
+  width:100%;
+  font-family: 微软雅黑;
+  //头部
+  .header {
+    width: 100%;
+    height: 3.46rem;
+    background-image: url(../img/person/bg.jpg);
+    padding-top:.44rem;
+    // 用户头像
+    .user-pic{
+      width:1.37rem;
+      height:1.37rem;
+      margin:0 auto;
+      img{
+        width: 1.37rem;
+        height:1.37rem;
+        border-radius: 50%;
+
+      }
+    }
+    //用户名
+    .username{
+      display: flex;
+      justify-content: center;
+      padding-top: 0.15rem;
+      margin-bottom: 0.03rem;
+      height: 0.54rem;
+      a{
+        display: block;
+        height: 0.35rem;
+        line-height: 0.4rem;
+        text-decoration: none;
+        font-size: 0.33rem;
+        color: #611c33;
+        font-weight: bold;
+      }
+    }
+    //关注、粉丝
+    .flow-all{
+      width: 2.7rem;
+      height: 0.47rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content:center;
+      .flow{
+        width: 1.3rem;
+        height:0.42rem;
+        float: left;
+        display: flex;
+        justify-content:space-around;
+        align-items:center ;
+        .p1{
+          height: 0.42rem;
+          color: #100f0f;
+          line-height: 0.42rem;
+          font-size: 0.23rem;
+        }
+        .p2{
+          height: 0.42rem;
+          color: #100f0f;
+          line-height: 0.42rem;
+          font-size: 0.23rem;
+        }
+      }
+      .flower{
+        width: 1.4rem;
+        height:0.42rem;
+        float: left;
+        font-size: 0.25rem;
+        display: flex;
+        justify-content:space-around;
+        align-items:center ;
+        .p1{
+          height: 0.42rem;
+          color: #100f0f;
+          line-height: 0.42rem;
+          font-size: 0.23rem;
+        }
+        .p2{
+          height: 0.42rem;
+          color: #100f0f;
+          line-height: 0.42rem;
+          font-size: 0.23rem;
+        }
+
+      }
+    }
+    // 新增关注
+    .add-flow {
+      width: 1.96rem;
+      height: 0.5rem;
+      border: 0.01rem #611c33 solid;
+      border-radius: 0.2rem;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      .add-all {
+        width: 1.4rem;
+        height: 0.48rem;
+        a {
+          margin-top: 0.05rem;
+          margin-left: 0.2rem;
+          display: block;
+          width: 1rem;
+          height: 0.38rem;
+          .p2 {
+            width: 1rem;
+            line-height: 0.4rem;
+            font-size: 0.24rem;
+            color: #1b1a1a;
+          }
+        }
+      }
+      .envelope-pic {
+        display: flex;
+        align-items: center;
+        width: 0.34rem;
+        height: 0.5rem;
+        position: relative;
+        a {
+          display: block;
+          width: 0.33rem;
+          height: 0.30rem;
+          position:absolute;top:0.12rem;bottom: 0;left:0;right: 0;
+          img {
+            width: 0.33rem;
+            height: .25rem;
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+      //.add-all{
+      //  flex: 4;
+      //  .add-word{
+      //    font-size:0.24rem ;
+      //    display: flex;
+      //    justify-content: center;
+      //    height: 0.5rem;
+      //    line-height: 0.5rem;
+      //    letter-spacing: 0.06rem;
+      //    text-align: left;
+      //  }
+      //}
+      //.envelope-pic{
+      //  flex:2;
+      //  display: flex;
+      //  justify-content: center;
+      //  align-content: center;
+      //  a{
+      //    display: block;
+      //    position: relative;
+      //    width: 0.6rem;
+      //    height: 0.5rem;
+      //    img{
+      //      width:0.33rem;
+      //      height: 0.25rem;
+      //      display: flex;
+      //      justify-content: center;
+      //      position: absolute;top:0;left: 0;right: 0;bottom: 0;
+      //    }
+      //  }
+
+      }
+
+    }
+    .vip{
+      width:1.96rem;
+      height: 0.5rem;
+      border: 1px #611c33 solid;
+      border-radius: 0.2rem;
+      position: relative;left: 3.88rem;
+      p{
+        font-size: 0.24rem;
+        color:#1b1a1a;
+        position: absolute;left: 0.29rem;
+        top: 0.06rem;
+      }
+      img{
+        width: 0.24rem;
+        height: 0.22rem;
+        position: absolute;right: 0.24rem;top:0.13rem;
+      }
+    }
+    }
+  //红酒个人分析
+  .wine{
+    height: 2.85rem;
+    width: 100%;
+    padding: 0.48rem 0.97rem 0 0.97rem;
+    border-bottom: 1px #d7d0d0 solid;
+    display: flex;
+    justify-content: space-around;
+    .wine-kind1{
+      width: 1.18rem;
+      height: 2.10rem;
+      .kind1-pic{
+        width: 1.18rem;
+        height: 1.18rem;
+        border:.02rem #040505 solid;
+        border-radius: 50%;
+        overflow: hidden;
+
+      }
+      .kind1-word{
+        width:0.4rem;
+        color: #611c33;
+        text-align: center;
+        margin-left: 0.37rem;;
+        background: #fff;
+      }
+      .origin{
+        padding-top: 0.34rem;
+        font-size: 0.3rem;
+        text-align:center;
+      }
+    }
+    .wine-kind2{
+      width: 1.18rem;
+      height: 2.10rem;
+      margin-left: 1rem;
+      .kind2-pic{
+        width: 1.18rem;
+        height: 1.18rem;
+        border:.02rem #040505 solid;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .kind2-word{
+        width:0.4rem;
+        color: #611c33;
+        text-align: center;
+        margin-left: 0.37rem;;
+      }
+      .variety{
+        padding-top: 0.34rem;
+        font-size: 0.3rem;
+        text-align:center;
+      }
+    }
+    .wine-kind3{
+      width: 1.18rem;
+      height: 2.10rem;
+      margin-left: 1rem;
+      .kind3-pic{
+        width: 1.18rem;
+        height: 1.18rem;
+        border:.02rem #040505 solid;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .kind3-word{
+        width:0.4rem;
+        color: #611c33;
+        text-align: center;
+        margin-left: 0.37rem;;
+      }
+      .years{
+        padding-top: 0.34rem;
+        font-size: 0.3rem;
+        text-align:center;
+      }
+    }
+  }
+  //订单
+  .order{
+    width: 100%;
+    height: 2rem;
+    padding: 0.3rem 0.15rem 0.3rem 0.15rem;
+    display: flex;
+    justify-content:space-around;
+    border-bottom:1px #d7d0d0 solid ;
+    li{
+      display:block;
+      width:1.2rem;
+      height: 1.7rem;
+      a{
+        display: block;
+        width: 1.2rem;
+        height: 1.5rem;
+      }
+      img{
+        margin-left: 0.28rem;
+      }
+      p{
+        padding-top: 0.37rem;
+        font-size: 0.25rem;
+        text-align: center;
+        color: #575454;
+      }
+    }
+    }
+  //设置，关于我们
+  .setting,.about{
+    width: 100%;
+    border-bottom:1px #d7d0d0 solid ;
+    line-height: 0.9rem;
+    li{
+      width: 100%;
+      height: 0.85rem;
+      margin-top: 0.05rem;
+      line-height: 0.85rem;
+      a{
+        display: block;
+        width: 100%;
+        height: 0.8rem;
+        font-size: 0.32rem;
+        padding-left: 0.61rem;
+        color: #333333;
+      }
+    }
+  }
+  //底部图标
+  .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    height: 1.02rem;
+    border-top: .02rem solid #611c33;
+    .index1,.message,.shop,.my{
+      width: .75rem;
+      text-align: center;
+    }
+    .img{
+      position: relative;
+      width: .75rem;
+      height: .74rem;
+      img{
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+    .div1{
+      color: #611c33;
+      font-size: .21rem;
+      width: .75rem;
+    }
+  }
+
+  }
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="#">
+    <script>
+        !function(e,t,i,r){function n(){var e=document.querySelector("head"),t=document.createElement("div");t.style.width="1rem",t.style.display="none",e.appendChild(t);var i=parseFloat(window.getComputedStyle(t,null).width);return e.removeChild(t),i}function a(){var r=d.getBoundingClientRect().width;r/c>768&&(r=768*c);var n=r/e*t;if(!i){var a=p/16;n/=a}d.style.fontSize=n+"px",v.rem=n}var m,o=window,l=o.document,d=l.documentElement,s=l.querySelector('meta[name="viewport"]'),c=0,u=0,p=n(),v={};if(s){var h=s.getAttribute("content").match(/initial\-scale=([\d\.]+)/);h&&(console.warn("将根据已有的meta标签来设置缩放比例"),u=parseFloat(h[1]),c=parseInt(1/u))}if(!c&&!u){var f=o.devicePixelRatio;r?(c=f>=3&&(!c||c>=3)?3:f>=2&&(!c||c>=2)?2:1,u=1/c):(c=1,u=1/c)}if(d.setAttribute("data-dpr",c),!s)if(s=l.createElement("meta"),s.setAttribute("name","viewport"),s.setAttribute("content","width=device-width, initial-scale="+u+", maximum-scale="+u+", minimum-scale="+u+", user-scalable=no"),d.firstElementChild)d.firstElementChild.appendChild(s);else{var w=l.createElement("div");w.appendChild(s),l.write(w.innerHTML)}o.addEventListener("resize",function(){clearTimeout(m),m=setTimeout(a,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(m),m=setTimeout(a,300))},!1),a(),v.dpr=c,v.refreshRem=a,v.rem2px=function(e){var t=parseFloat(e)*this.rem;return"string"==typeof e&&e.match(/rem$/)&&(t+="px"),t},v.px2rem=function(e){var t=parseFloat(e)/this.rem;return"string"==typeof e&&e.match(/px$/)&&(t+="rem"),t},window.remmoka=v}
+        (750,100,!0,!0);
+        /*
+         * designWidth, oneRem2Px, resetScaleFontSizeToDefault, useScaleFix1pxTooBold
+         * @param designWidth 设计稿宽度 一般来说iPhone6是750 如果缩小就变成了375px
+         * @param oneRem2Px 1rem对应多少px
+         * @param resetScaleFontSizeToDefault 是否重置Android因为系统放大或者缩小字体带来的影响
+         * @param useScaleFix1pxTooBold 是否通过meta标签的scale处理1px过于粗的问题
+         * */
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>message</title>
+</head>
+<body class="message">
+<div>
+    <div class="message-1">
+        <div class="message-left">
+            <img class="user-pic" src="img/message/userPic-1.png">
+        </div>
+        <div class="message-right">
+            <span class="user-name">不醉不归</span>
+            <!--<div class="user-pro">-->
+                <!--<img  class="official" src="img/message/user-pro-1.png">-->
+                <!--<img  class="business" src="img/message/user-pro-2.png">-->
+                <!--<img  class="friends" src="img/message/user-pro-3.png">-->
+            <!--</div>-->
+            <div class="message-content">尊敬的用户您好，欢迎来到红酒庄园！</div>
+        </div>
+    </div>
+    <div class="message-1">
+        <div class="message-left">
+            <img class="user-pic" src="img/message/userPic-1.png">
+        </div>
+        <div class="message-right">
+            <span class="user-name">不醉不归</span>
+            <!--<div class="user-pro">-->
+            <!--<img  class="official" src="img/message/user-pro-1.png">-->
+            <!--<img  class="business" src="img/message/user-pro-2.png">-->
+            <!--<img  class="friends" src="img/message/user-pro-3.png">-->
+            <!--</div>-->
+            <div class="message-content">尊敬的用户您好，欢迎来到红酒庄园！</div>
+        </div>
+    </div>
+</div>
+<ul class="footer">
+    <li class="index1">
+        <a class="img" href="index.html">
+            <img src="img/index/home.png" style="width: .58rem; height: .58rem">
+        </a>
+        <div class="div1">首页</div>
+    </li>
+    <li class="message1">
+        <a class="img" href="message.html">
+            <img src="img/index/chat1.png" style="width: .55rem; height: .5rem">
+        </a>
+        <div class="div1">消息</div>
+    </li>
+    <li class="shop">
+        <a class="img" href="cart.html">
+            <img src="img/index/cart.png" style="width: .58rem; height: .54rem">
+        </a>
+        <div class="div1">购物车</div>
+    </li>
+    <li class="my">
+        <a class="img" href="person.html">
+            <img src="img/index/person.png" style="width: .5rem; height: .5rem">
+        </a>
+        <div class="div1">我的</div>
+    </li>
+</ul>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/message.js" type="text/javascript"></script>
+</body>
+</html>

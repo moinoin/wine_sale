@@ -1,0 +1,33 @@
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  height: 1.02rem;
+  border-top: .02rem solid #611c33;
+  .index1,.message1,.shop,.my{
+    width: .75rem;
+    text-align: center;
+  }
+  .img{
+    position: relative;
+    width: .75rem;
+    height: .74rem;
+    display: block;
+    img{
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  .div1{
+    color: #611c33;
+    font-size: .21rem;
+    width: .75rem;
+  }
+}

@@ -1,0 +1,125 @@
+.cart{
+  padding-bottom: 1.15rem;
+  .cart-list{
+    height: 2.14rem;
+    border-bottom: .14rem #eae8e8 solid;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .cart-content{
+      display: flex;
+      justify-content: flex-start;
+      .pic{
+        width: .75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .circle{
+          width: .4rem;
+          height:.4rem;
+        }
+      }
+      .wine{
+        width: 1.64rem;
+        height: 1.64rem;
+      }
+      .cart-goods{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: .18rem;
+        .cart-goods-name{}
+        .cart-goods-score{
+          font-size: .24rem;
+          color: #787878;
+        }
+        .cart-goods-price{
+          font-size: .25rem;
+          color: #d81e06;
+        }
+      }
+    }
+    .cart-count{
+      width: 1.5rem;
+      height: .5rem;
+      border: .02rem #e1e1e1 solid;
+      border-radius: .15rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      left: 5.52rem;
+      top: 1.30rem;
+      .reduce{
+        font-size: .50rem;
+        color: #70324c;
+      }
+      .line{
+        width: .02rem;
+        height: .32rem;
+        background-color: #e1e1e1;
+      }
+      .number{
+        font-size: .30rem;
+        color: #70324c;
+      }
+      .add{
+        font-size: .35rem ;
+        color: #70324c;
+      }
+    }
+  }
+  .account{
+    background-color: #fff;
+    height: 1.15rem;
+    font-weight: bold;
+    border-top: .01rem #787878 solid;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    .left{
+      width: 5.23rem;
+      display: flex;
+      font-weight: bold;
+      padding-left: .18rem;
+      padding-right: .18rem;
+      justify-content: space-between;
+      align-items: center;
+      .circle{
+        width: .4rem;
+        height: .4rem;
+      }
+      .check-all{
+        font-size: .27rem;
+        color: #000;
+      }
+      .total-money{
+        .total{
+          font-size: .29rem;
+          color: #000;
+        }
+        .money{
+          font-size: .29rem;
+          color: #d81e06;
+        }
+      }
+    }
+    .right{
+      width: 2.27rem;
+      background-color: #611c33;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .balance{
+        font-size: .28rem;
+        color: #fff;
+      }
+      .amount{
+        font-size: .23rem;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="#">
+    <script>
+        !function(e,t,i,r){function n(){var e=document.querySelector("head"),t=document.createElement("div");t.style.width="1rem",t.style.display="none",e.appendChild(t);var i=parseFloat(window.getComputedStyle(t,null).width);return e.removeChild(t),i}function a(){var r=d.getBoundingClientRect().width;r/c>768&&(r=768*c);var n=r/e*t;if(!i){var a=p/16;n/=a}d.style.fontSize=n+"px",v.rem=n}var m,o=window,l=o.document,d=l.documentElement,s=l.querySelector('meta[name="viewport"]'),c=0,u=0,p=n(),v={};if(s){var h=s.getAttribute("content").match(/initial\-scale=([\d\.]+)/);h&&(console.warn("将根据已有的meta标签来设置缩放比例"),u=parseFloat(h[1]),c=parseInt(1/u))}if(!c&&!u){var f=o.devicePixelRatio;r?(c=f>=3&&(!c||c>=3)?3:f>=2&&(!c||c>=2)?2:1,u=1/c):(c=1,u=1/c)}if(d.setAttribute("data-dpr",c),!s)if(s=l.createElement("meta"),s.setAttribute("name","viewport"),s.setAttribute("content","width=device-width, initial-scale="+u+", maximum-scale="+u+", minimum-scale="+u+", user-scalable=no"),d.firstElementChild)d.firstElementChild.appendChild(s);else{var w=l.createElement("div");w.appendChild(s),l.write(w.innerHTML)}o.addEventListener("resize",function(){clearTimeout(m),m=setTimeout(a,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(m),m=setTimeout(a,300))},!1),a(),v.dpr=c,v.refreshRem=a,v.rem2px=function(e){var t=parseFloat(e)*this.rem;return"string"==typeof e&&e.match(/rem$/)&&(t+="px"),t},v.px2rem=function(e){var t=parseFloat(e)/this.rem;return"string"==typeof e&&e.match(/px$/)&&(t+="rem"),t},window.remmoka=v}
+        (750,100,!0,!0);
+        /*
+         * designWidth, oneRem2Px, resetScaleFontSizeToDefault, useScaleFix1pxTooBold
+         * @param designWidth 设计稿宽度 一般来说iPhone6是750 如果缩小就变成了375px
+         * @param oneRem2Px 1rem对应多少px
+         * @param resetScaleFontSizeToDefault 是否重置Android因为系统放大或者缩小字体带来的影响
+         * @param useScaleFix1pxTooBold 是否通过meta标签的scale处理1px过于粗的问题
+         * */
+    </script>
+    <style type="text/css">
+        .swiper-container {
+            width: 100%;
+            height: 2.4rem;
+        }
+        .swiper-slide a img{
+            width: 100%;
+            height: 2.4rem;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>首页</title>
+</head>
+
+<body class="index">
+    <div class="bigTu"></div>
+    <!--我是有上线的-->
+    <p class="rem">---------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是有上线的&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------------------</p>
+
+    <!-- header -->
+    <ul class="index-nav">
+        <li style="color: #611c33;">个性推荐<div class="index-nav-bar" style="display: block;"></div></li>
+        <li>严选品牌<div class="index-nav-bar"></div></li>
+        <li>&nbsp;大V用户<div class="index-nav-bar"></div></li>
+    </ul>
+
+    <!-- swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="product_details.html"><img src="img/index/bg.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="product_details.html"><img src="img/index/bg.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="product_details.html"><img src="img/index/bg.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="product_details.html"><img src="img/index/bg.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="product_details.html"><img src="img/index/bg.jpg" alt=""></a></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--搜索-->
+    <a href="search.html"><img src="img/index/search.png" style="width:.67rem; height:.67rem; position: fixed;left:6.5rem;top: 7rem; z-index:3;" ></a>
+
+    <!--个性推荐-->
+    <div class="recommend title">
+        <!-- tab -->
+        <ul class="index-nav1 recommend-nav">
+            <li class="person">
+                <a href="rank_p.html">
+                    <img src="img/index/jiubei.png" style="width: .28rem; height: .4rem">
+                    <span>私人酒窖</span>
+                </a>
+            </li>
+            <div class="index-nav1-bar"></div>
+            <li>
+                <a href="rank.html">
+                    <img src="img/index/hot.png" style="width: .4rem; height: .4rem">
+                    <span>热榜</span>
+                </a>
+            </li>
+        </ul>
+        <!-- section -->
+        <div class="index-houseSelections">
+        </div>
+    </div>
+
+    <!--严选品牌-->
+    <div class="strict title">
+        <ul class="index-nav1 strict-nav1">
+            <li class="red">
+                <img src="img/index/hongjiubei.png" style="width: .28rem; height: .4rem">
+                <span style="color: #611c33;">红葡萄酒</span>
+            </li>
+            <li class="white">
+                <img src="img/index/baijiubei.png" style="width: .4rem; height: .4rem">
+                <span>白葡萄酒</span>
+            </li>
+            <div class="index-nav1-bar"></div>
+        </ul>
+        <!-- section -->
+        <!--红葡萄酒-->
+        <div class="strict-houseSelections-red">
+
+        </div>
+        <!--白葡萄酒-->
+        <div class="strict-houseSelections-white">
+
+        </div>
+    </div>
+
+    <!--大V用户-->
+    <div class="largeV title">
+        <ul class="index-nav1">
+            <li>
+                <a href="rank_c.html">
+                    <img src="img/index/city.png" style="width: .28rem; height: .4rem">
+                    <span>同城榜</span>
+                </a>
+            </li>
+            <div class="index-nav1-bar"></div>
+            <li>
+                <a href="rank_v.html">
+                    <img src="img/index/hot.png" style="width: .4rem; height: .4rem">
+                    <span>排行榜</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--我是有下线的-->
+    <p class="re">---------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是有底线的&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------------------</p>
+
+    <!-- footer -->
+    <ul class="footer">
+        <li class="index1">
+            <a class="img" href="index.html">
+                <img src="img/index/home1.png" style="width: .58rem; height: .58rem">
+            </a>
+            <div class="div1">首页</div>
+        </li>
+        <li class="message1">
+            <a class="img" href="message.html">
+                <img src="img/index/chat.png" style="width: .55rem; height: .5rem">
+            </a>
+            <div class="div1">消息</div>
+        </li>
+        <li class="shop">
+            <a class="img" href="cart.html">
+                <img src="img/index/cart.png" style="width: .58rem; height: .54rem">
+            </a>
+            <div class="div1">购物车</div>
+        </li>
+        <li class="my">
+            <a class="img" href="person.html">
+                <img src="img/index/person.png" style="width: .5rem; height: .5rem">
+            </a>
+            <div class="div1">我的</div>
+        </li>
+    </ul>
+
+    <script src="./js/lib/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
+    </script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

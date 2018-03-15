@@ -1,0 +1,39 @@
+.chatting{
+  width: 7.5rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.75rem;
+
+  .header{
+  width: 7.5rem;
+  height:1.0rem;
+  background-color: mediumpurple;
+  font-size:0.7rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.0rem;
+}
+  .view{
+    width: 7.5rem;
+    height:10rem;
+    border-bottom: 0.01rem #cccccc solid;
+    text-align: right;
+    overflow: auto;
+  }
+  .view li div{
+    display:inline-block;
+    width:auto;
+    height:0.3rem;
+    border-radius:0.05rem;
+    background-color:#78cdf8;
+    padding:0 0.1rem;
+    line-height:0.3rem;
+  }
+  .text{
+    width:7.3rem;
+    height:1.2rem;
+    border:0;
+    background-color:#a9a9a9;
+  }
+}
+

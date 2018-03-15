@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="#">
+    <script>
+        !function(e,t,i,r){function n(){var e=document.querySelector("head"),t=document.createElement("div");t.style.width="1rem",t.style.display="none",e.appendChild(t);var i=parseFloat(window.getComputedStyle(t,null).width);return e.removeChild(t),i}function a(){var r=d.getBoundingClientRect().width;r/c>768&&(r=768*c);var n=r/e*t;if(!i){var a=p/16;n/=a}d.style.fontSize=n+"px",v.rem=n}var m,o=window,l=o.document,d=l.documentElement,s=l.querySelector('meta[name="viewport"]'),c=0,u=0,p=n(),v={};if(s){var h=s.getAttribute("content").match(/initial\-scale=([\d\.]+)/);h&&(console.warn("将根据已有的meta标签来设置缩放比例"),u=parseFloat(h[1]),c=parseInt(1/u))}if(!c&&!u){var f=o.devicePixelRatio;r?(c=f>=3&&(!c||c>=3)?3:f>=2&&(!c||c>=2)?2:1,u=1/c):(c=1,u=1/c)}if(d.setAttribute("data-dpr",c),!s)if(s=l.createElement("meta"),s.setAttribute("name","viewport"),s.setAttribute("content","width=device-width, initial-scale="+u+", maximum-scale="+u+", minimum-scale="+u+", user-scalable=no"),d.firstElementChild)d.firstElementChild.appendChild(s);else{var w=l.createElement("div");w.appendChild(s),l.write(w.innerHTML)}o.addEventListener("resize",function(){clearTimeout(m),m=setTimeout(a,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(m),m=setTimeout(a,300))},!1),a(),v.dpr=c,v.refreshRem=a,v.rem2px=function(e){var t=parseFloat(e)*this.rem;return"string"==typeof e&&e.match(/rem$/)&&(t+="px"),t},v.px2rem=function(e){var t=parseFloat(e)/this.rem;return"string"==typeof e&&e.match(/px$/)&&(t+="rem"),t},window.remmoka=v}
+        (750,100,!0,!0);
+        /*
+         * designWidth, oneRem2Px, resetScaleFontSizeToDefault, useScaleFix1pxTooBold
+         * @param designWidth 设计稿宽度 一般来说iPhone6是750 如果缩小就变成了375px
+         * @param oneRem2Px 1rem对应多少px
+         * @param resetScaleFontSizeToDefault 是否重置Android因为系统放大或者缩小字体带来的影响
+         * @param useScaleFix1pxTooBold 是否通过meta标签的scale处理1px过于粗的问题
+         * */
+    </script>
+    <title>订单详情</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div class="details">
+    <div class="receive-mation">
+        <div class="pic"><img src="img/order_details/address.png"></div>
+        <div class="mation">
+            <li class="name"><span>收货人:王静</span><span>15829242291</span></li>
+            <li class="address">收货地址:陕西省西安市长安区西安邮电大学某某某街道</li>
+            <li class="note">(收货不便时，可选择免费代收货服务)</li>
+        </div>
+        <div class="arrow"><img src="img/order_details/arrow.jpg"></div>
+    </div>
+    <div class="goods">
+            <div class="goods-img">
+                <img src="img/order_details/wine1.jpg">
+            </div>
+            <div class="goods-mation">
+                <li class="goods-name">新品上市某某某牌子红葡萄酒新品上市某某某牌子红葡萄酒</li>
+                <li class="goods-information">评分:8分</li>
+                <li class="goods-return">七天退换</li>
+                <li class="goods-price"><span class="money">¥376</span><span class="count">×1</span></li>
+            </div>
+    </div>
+    <div class="transport">
+                <li class="favourable"><span>店铺优惠</span><span>全场顺丰包邮<img src="img/order_details/arrow.jpg"></span></li>
+                <li class="send"><span>配送方式</span><span>顺丰 免邮<img src="img/order_details/arrow.jpg"></span></li>
+                <li class="insurance"><span>运费险</span><span>未选择<img src="img/order_details/arrow.jpg"></span></li>
+                <li class="message">买家留言：</li>
+                <li class="total">共<span>1</span>件商品 &nbsp;&nbsp;小计:<span>¥379.00</span></li>
+            </div>
+    <div class="coupon">
+        <div>使用优惠券</div>
+        <div><img src="img/order_details/circle.png"></div>
+    </div>
+    <div class="account">
+        <div class="left">
+                <span class="total">总计:</span>
+                <span class="money">¥1314520</span>
+        </div>
+        <div class="right">
+            <span class="balance">去结算</span>
+            <span class="amount">（3件）</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
